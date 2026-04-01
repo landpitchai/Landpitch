@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="LandPitch AI — Turn your tourist-area land into a professional investor presentation in 15 minutes. No agents, no fees, no waiting." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="LandPitch AI" />
+  <meta property="og:description" content="Your land. The right investor. 15 minutes." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0D1B2A" />
+
+  <title data-i18n="meta.title">LandPitch AI — Your Land. The Right Investor. 15 Minutes.</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══ NAVIGATION ══════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#" class="nav__logo" aria-label="LandPitch AI home">
+        Land<span>Pitch</span> <em>AI</em>
+      </a>
+
+      <button class="nav__burger" id="navBurger" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="#how" class="nav__link" data-i18n="nav.how">How it works</a></li>
+        <li><a href="#what" class="nav__link" data-i18n="nav.what">What you get</a></li>
+        <li><a href="#pricing" class="nav__link" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="#form" class="nav__link nav__link--cta" data-i18n="nav.cta">Get started free</a></li>
+      </ul>
+
+      <!-- Language switcher -->
+      <div class="lang-switcher" role="navigation" aria-label="Language">
+        <button class="lang-switcher__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+          <span class="lang-switcher__flag" id="langFlag">🇬🇧</span>
+          <span class="lang-switcher__code" id="langCode">EN</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="lang-switcher__dropdown" id="langDropdown" role="listbox" aria-label="Select language">
+          <li role="option" aria-selected="true"  data-lang="en" data-flag="🇬🇧">🇬🇧 English</li>
+          <li role="option" aria-selected="false" data-lang="es" data-flag="🇪🇸">🇪🇸 Español</li>
+          <li role="option" aria-selected="false" data-lang="fr" data-flag="🇫🇷">🇫🇷 Français</li>
+          <li role="option" aria-selected="false" data-lang="de" data-flag="🇩🇪">🇩🇪 Deutsch</li>
+          <li role="option" aria-selected="false" data-lang="pt" data-flag="🇵🇹">🇵🇹 Português</li>
+          <li role="option" aria-selected="false" data-lang="ru" data-flag="🇷🇺">🇷🇺 Русский</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ══ HERO ════════════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content" data-animate="fade-up">
+          <span class="hero__eyebrow" data-i18n="hero.eyebrow">For landowners in tourist destinations</span>
+          <h1 class="hero__heading" id="hero-heading">
+            <span data-i18n="hero.line1">Your land.</span><br>
+            <em data-i18n="hero.line2">The right investor.</em><br>
+            <span data-i18n="hero.line3">15 minutes.</span>
+          </h1>
+          <p class="hero__sub" data-i18n="hero.sub">
+            We turn your land into a professional investor presentation — complete with development concepts, financial projections and direct introductions to verified investors. No estate agents. No waiting.
+          </p>
+          <div class="hero__actions">
+            <a href="#form" class="btn btn--primary" data-i18n="hero.cta">Get my free presentation</a>
+            <a href="#how" class="btn btn--ghost" data-i18n="hero.secondary">See how it works</a>
+          </div>
+        </div>
+
+        <div class="hero__card" data-animate="fade-left" aria-hidden="true">
+          <div class="card-mock">
+            <div class="card-mock__header">
+              <div class="card-mock__dot"></div>
+              <div class="card-mock__dot"></div>
+              <div class="card-mock__dot"></div>
+              <span class="card-mock__label" data-i18n="hero.card.title">Investor Presentation</span>
+            </div>
+            <div class="card-mock__plot">
+              <div class="card-mock__map-pin">📍</div>
+              <p class="card-mock__location">Algarve, Portugal · 12 acres</p>
+            </div>
+            <div class="card-mock__concepts">
+              <div class="card-mock__concept card-mock__concept--active">
+                <span class="concept-dot"></span>
+                <span data-i18n="hero.card.concept1">Luxury Glamping Resort</span>
+                <strong>€480K/yr</strong>
+              </div>
+              <div class="card-mock__concept">
+                <span class="concept-dot"></span>
+                <span data-i18n="hero.card.concept2">Boutique Eco-Hotel</span>
+                <strong>€720K/yr</strong>
+              </div>
+              <div class="card-mock__concept">
+                <span class="concept-dot"></span>
+                <span data-i18n="hero.card.concept3">Private Villa Estate</span>
+                <strong>€2.4M sale</strong>
+              </div>
+            </div>
+            <div class="card-mock__bar">
+              <div class="card-mock__bar-label" data-i18n="hero.card.progress">AI analysis complete</div>
+              <div class="card-mock__bar-track"><div class="card-mock__bar-fill"></div></div>
+            </div>
+            <div class="card-mock__footer">
+              <span class="card-mock__investors" data-i18n="hero.card.investors">47 investors notified</span>
+              <span class="card-mock__time" data-i18n="hero.card.time">14 min ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="hero__stats container" data-animate="fade-up" data-delay="200">
+        <div class="stat">
+          <strong class="stat__num">15</strong>
+          <span class="stat__label" data-i18n="stats.minutes">minutes to results</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong class="stat__num">0<small>$€£</small></strong>
+          <span class="stat__label" data-i18n="stats.commission">agent commission</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong class="stat__num">500<small>+</small></strong>
+          <span class="stat__label" data-i18n="stats.investors">verified investors</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong class="stat__num">5</strong>
+          <span class="stat__label" data-i18n="stats.concepts">concepts generated</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PROBLEM ══════════════════════════════════════ -->
+    <section class="problem" aria-labelledby="problem-heading">
+      <div class="container">
+        <div class="section-label" data-i18n="problem.label">The problem</div>
+        <h2 class="section-heading" id="problem-heading" data-i18n="problem.heading">
+          Great land. Wrong tools.
+        </h2>
+        <p class="section-sub" data-i18n="problem.sub">
+          Landowners in tourist destinations sit on extraordinary assets — and spend years unable to reach the investors who would buy them.
+        </p>
+
+        <div class="problem__grid">
+          <article class="problem__card" data-animate="fade-up" data-delay="0">
+            <div class="problem__icon" aria-hidden="true">💸</div>
+            <h3 data-i18n="problem.p1.title">Estate agents take 3–6%</h3>
+            <p data-i18n="problem.p1.body">Plus 2–4 months of waiting, and rarely any access to serious investment capital.</p>
+          </article>
+          <article class="problem__card" data-animate="fade-up" data-delay="100">
+            <div class="problem__icon" aria-hidden="true">📋</div>
+            <h3 data-i18n="problem.p2.title">Listing sites don't work for land</h3>
+            <p data-i18n="problem.p2.body">Rightmove, Zillow — built for houses. No concepts, no ROI, no investor introductions.</p>
+          </article>
+          <article class="problem__card" data-animate="fade-up" data-delay="200">
+            <div class="problem__icon" aria-hidden="true">🧾</div>
+            <h3 data-i18n="problem.p3.title">Consultants charge $3,000–10,000</h3>
+            <p data-i18n="problem.p3.body">For a presentation that takes weeks — and still no guarantee of a single investor introduction.</p>
+          </article>
+          <article class="problem__card" data-animate="fade-up" data-delay="300">
+            <div class="problem__icon" aria-hidden="true">🔒</div>
+            <h3 data-i18n="problem.p4.title">Investors are hard to reach</h3>
+            <p data-i18n="problem.p4.body">They don't browse classified ads. They work through trusted networks and professional introductions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ HOW IT WORKS ═════════════════════════════════ -->
+    <section class="how" id="how" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-label" data-i18n="how.label">How it works</div>
+        <h2 class="section-heading" id="how-heading" data-i18n="how.heading">Four steps. 15 minutes.</h2>
+        <p class="section-sub" data-i18n="how.sub">No technical knowledge needed. No documents to prepare. Just tell us about your land.</p>
+
+        <ol class="steps" role="list">
+          <li class="step" data-animate="fade-up" data-delay="0">
+            <div class="step__num" aria-hidden="true">01</div>
+            <div class="step__content">
+              <h3 data-i18n="how.s1.title">Tell us about your land</h3>
+              <p data-i18n="how.s1.body">Fill in a short form — location, size, asking price, and a brief description. Takes about 3 minutes. No documents needed.</p>
+            </div>
+            <div class="step__arrow" aria-hidden="true"></div>
+          </li>
+          <li class="step" data-animate="fade-up" data-delay="100">
+            <div class="step__num" aria-hidden="true">02</div>
+            <div class="step__content">
+              <h3 data-i18n="how.s2.title">We analyse the opportunity</h3>
+              <p data-i18n="how.s2.body">Our platform researches your area — tourism figures, comparable properties, infrastructure, and what investors are actively looking for right now.</p>
+            </div>
+            <div class="step__arrow" aria-hidden="true"></div>
+          </li>
+          <li class="step" data-animate="fade-up" data-delay="200">
+            <div class="step__num" aria-hidden="true">03</div>
+            <div class="step__content">
+              <h3 data-i18n="how.s3.title">You receive your investor presentation</h3>
+              <p data-i18n="how.s3.body">A professional 12-page document showing your land's potential — concepts, visuals, and financial projections. Clear enough for any investor to act on immediately.</p>
+            </div>
+            <div class="step__arrow" aria-hidden="true"></div>
+          </li>
+          <li class="step" data-animate="fade-up" data-delay="300">
+            <div class="step__num" aria-hidden="true">04</div>
+            <div class="step__content">
+              <h3 data-i18n="how.s4.title">Investors come to you</h3>
+              <p data-i18n="how.s4.body">We contact our database of verified investors and publish your listing professionally. Interested parties reach out to you directly.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ══ WHAT YOU GET ══════════════════════════════════ -->
+    <section class="what" id="what" aria-labelledby="what-heading">
+      <div class="container">
+        <div class="section-label" data-i18n="what.label">What you receive</div>
+        <h2 class="section-heading" id="what-heading" data-i18n="what.heading">Everything in one package.</h2>
+
+        <div class="what__grid">
+          <article class="what__card what__card--large" data-animate="fade-up">
+            <div class="what__icon" aria-hidden="true">📄</div>
+            <h3 data-i18n="what.w1.title">Investor Presentation</h3>
+            <p data-i18n="what.w1.body">A professionally designed 12-page document telling the story of your land — where it is, what it could become, how much it could earn, and why an investor should act now.</p>
+          </article>
+          <article class="what__card" data-animate="fade-up" data-delay="100">
+            <div class="what__icon" aria-hidden="true">🏨</div>
+            <h3 data-i18n="what.w2.title">Development Concepts</h3>
+            <p data-i18n="what.w2.body">3 to 5 realistic ideas — glamping, boutique hotel, villas, retreat centre — each with projected income and costs.</p>
+          </article>
+          <article class="what__card" data-animate="fade-up" data-delay="150">
+            <div class="what__icon" aria-hidden="true">📊</div>
+            <h3 data-i18n="what.w3.title">Financial Projections</h3>
+            <p data-i18n="what.w3.body">Clear numbers: development cost, annual revenue, return on investment, and payback period for each concept.</p>
+          </article>
+          <article class="what__card" data-animate="fade-up" data-delay="200">
+            <div class="what__icon" aria-hidden="true">🎨</div>
+            <h3 data-i18n="what.w4.title">Visual Impressions</h3>
+            <p data-i18n="what.w4.body">Realistic AI illustrations showing how each concept could look on your land. No architect required.</p>
+          </article>
+          <article class="what__card" data-animate="fade-up" data-delay="250">
+            <div class="what__icon" aria-hidden="true">📣</div>
+            <h3 data-i18n="what.w5.title">Investor Outreach</h3>
+            <p data-i18n="what.w5.body">We contact verified investors whose interests match your land. Each message is personalised to their known investment focus.</p>
+          </article>
+          <article class="what__card" data-animate="fade-up" data-delay="300">
+            <div class="what__icon" aria-hidden="true">🌐</div>
+            <h3 data-i18n="what.w6.title">Marketplace Listing</h3>
+            <p data-i18n="what.w6.body">Your property published on our platform and promoted across LinkedIn and specialist real estate channels.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PRICING ═══════════════════════════════════════ -->
+    <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="section-label" data-i18n="pricing.label">Pricing</div>
+        <h2 class="section-heading" id="pricing-heading" data-i18n="pricing.heading">Simple. Transparent. No commission.</h2>
+        <p class="section-sub" data-i18n="pricing.sub">Your first submission is always free. No hidden fees. Cancel any time.</p>
+
+        <div class="pricing__grid">
+
+          <!-- Starter -->
+          <article class="plan" data-animate="fade-up" data-delay="0" aria-labelledby="plan-starter">
+            <div class="plan__context" data-i18n="pricing.starter.context">For individual landowners</div>
+            <div class="plan__header">
+              <h3 class="plan__name" id="plan-starter" data-i18n="pricing.starter.name">Starter</h3>
+              <div class="plan__price">
+                <span class="plan__amount">$29</span>
+                <span class="plan__period" data-i18n="pricing.per_month">/ month</span>
+              </div>
+            </div>
+            <ul class="plan__features" role="list">
+              <li data-i18n="pricing.starter.f1">1 land plot listing</li>
+              <li data-i18n="pricing.starter.f2">Investor presentation (12 pages)</li>
+              <li data-i18n="pricing.starter.f3">5 development concepts</li>
+              <li data-i18n="pricing.starter.f4">Financial projections</li>
+              <li data-i18n="pricing.starter.f5">AI visual impressions</li>
+              <li data-i18n="pricing.starter.f6">Marketplace listing</li>
+              <li data-i18n="pricing.starter.f7">Outreach to 30 investors</li>
+            </ul>
+            <a href="#form" class="btn btn--outline" data-i18n="pricing.cta">Start free</a>
+          </article>
+
+          <!-- Pro -->
+          <article class="plan plan--featured" data-animate="fade-up" data-delay="100" aria-labelledby="plan-pro">
+            <div class="plan__badge" data-i18n="pricing.pro.badge">Most popular</div>
+            <div class="plan__context" data-i18n="pricing.pro.context">For owners of multiple plots</div>
+            <div class="plan__header">
+              <h3 class="plan__name" id="plan-pro" data-i18n="pricing.pro.name">Pro</h3>
+              <div class="plan__price">
+                <span class="plan__amount">$79</span>
+                <span class="plan__period" data-i18n="pricing.per_month">/ month</span>
+              </div>
+            </div>
+            <ul class="plan__features" role="list">
+              <li data-i18n="pricing.pro.f1">Up to 10 plot listings</li>
+              <li data-i18n="pricing.pro.f2">Investor presentation per listing</li>
+              <li data-i18n="pricing.pro.f3">5 development concepts each</li>
+              <li data-i18n="pricing.pro.f4">Financial projections</li>
+              <li data-i18n="pricing.pro.f5">AI visual impressions</li>
+              <li data-i18n="pricing.pro.f6">Marketplace + social media</li>
+              <li data-i18n="pricing.pro.f7">Outreach to 200 investors</li>
+              <li data-i18n="pricing.pro.f8">Priority processing</li>
+            </ul>
+            <a href="#form" class="btn btn--primary" data-i18n="pricing.cta">Start free</a>
+          </article>
+
+          <!-- Agency -->
+          <article class="plan plan--agency" data-animate="fade-up" data-delay="200" aria-labelledby="plan-agency">
+            <div class="plan__context" data-i18n="pricing.agency.context">Run as your own business from home</div>
+            <div class="plan__header">
+              <h3 class="plan__name" id="plan-agency" data-i18n="pricing.agency.name">Agency</h3>
+              <div class="plan__price">
+                <span class="plan__amount">$299</span>
+                <span class="plan__period" data-i18n="pricing.per_month">/ month</span>
+              </div>
+            </div>
+            <ul class="plan__features" role="list">
+              <li data-i18n="pricing.agency.f1">Unlimited plot listings</li>
+              <li data-i18n="pricing.agency.f2">All Pro features included</li>
+              <li data-i18n="pricing.agency.f3">Full white-label branding</li>
+              <li data-i18n="pricing.agency.f4">Offer as your own service</li>
+              <li data-i18n="pricing.agency.f5">500+ investor database access</li>
+              <li data-i18n="pricing.agency.f6">Dedicated account manager</li>
+              <li data-i18n="pricing.agency.f7">Revenue share programme</li>
+              <li data-i18n="pricing.agency.f8">No office needed</li>
+            </ul>
+            <a href="#form" class="btn btn--outline" data-i18n="pricing.cta">Start free</a>
+          </article>
+
+        </div>
+
+        <!-- Agency callout -->
+        <aside class="agency-callout" data-animate="fade-up" aria-label="Agency plan detail">
+          <div class="agency-callout__accent" aria-hidden="true"></div>
+          <div class="agency-callout__body">
+            <h3 data-i18n="pricing.agency.callout.title">The Agency Plan: a ready-made business from home.</h3>
+            <p data-i18n="pricing.agency.callout.body">Use our platform under your own name and brand. Set your own prices. Keep the profit. No office, no staff, no upfront investment — just a laptop, our platform, and your ambition.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ══ FORM ═══════════════════════════════════════════ -->
+    <section class="form-section" id="form" aria-labelledby="form-heading">
+      <div class="container form-section__inner">
+
+        <div class="form-section__left" data-animate="fade-up">
+          <div class="section-label" data-i18n="form.label">Get started</div>
+          <h2 class="section-heading section-heading--light" id="form-heading" data-i18n="form.heading">
+            Your investor presentation in 15 minutes.
+          </h2>
+          <ul class="form-section__promises" role="list">
+            <li>
+              <span class="promise-icon" aria-hidden="true">⚡</span>
+              <span data-i18n="form.promise1">Results in 15 minutes or less</span>
+            </li>
+            <li>
+              <span class="promise-icon" aria-hidden="true">🎁</span>
+              <span data-i18n="form.promise2">First submission completely free</span>
+            </li>
+            <li>
+              <span class="promise-icon" aria-hidden="true">🔒</span>
+              <span data-i18n="form.promise3">Your details are never shared without consent</span>
+            </li>
+            <li>
+              <span class="promise-icon" aria-hidden="true">🌍</span>
+              <span data-i18n="form.promise4">We work with land in any country</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-section__right" data-animate="fade-up" data-delay="150">
+          <form id="landForm" class="land-form" novalidate aria-label="Land submission form">
+
+            <div class="form__row form__row--2">
+              <div class="form__field">
+                <label class="form__label" for="ownerName" data-i18n="form.name.label">Your name</label>
+                <input class="form__input" type="text" id="ownerName" name="owner_name"
+                  autocomplete="name" required
+                  data-i18n-placeholder="form.name.placeholder" placeholder="John Smith" />
+                <span class="form__error" role="alert" data-i18n="form.required">This field is required</span>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="ownerContact" data-i18n="form.contact.label">Phone / Email</label>
+                <input class="form__input" type="text" id="ownerContact" name="owner_contact"
+                  autocomplete="email" required
+                  data-i18n-placeholder="form.contact.placeholder" placeholder="+1 555 000 0000" />
+                <span class="form__error" role="alert" data-i18n="form.required">This field is required</span>
+              </div>
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="location" data-i18n="form.location.label">Plot location</label>
+              <input class="form__input" type="text" id="location" name="location"
+                autocomplete="country-name" required
+                data-i18n-placeholder="form.location.placeholder" placeholder="e.g. Algarve, Portugal" />
+              <span class="form__error" role="alert" data-i18n="form.required">This field is required</span>
+            </div>
+
+            <div class="form__row form__row--2">
+              <div class="form__field">
+                <label class="form__label" for="area" data-i18n="form.area.label">Area (acres)</label>
+                <input class="form__input" type="number" id="area" name="area"
+                  min="0.1" step="0.1" required
+                  data-i18n-placeholder="form.area.placeholder" placeholder="12" />
+                <span class="form__error" role="alert" data-i18n="form.required">This field is required</span>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="price" data-i18n="form.price.label">Asking price ($)</label>
+                <input class="form__input" type="number" id="price" name="price"
+                  min="0" required
+                  data-i18n-placeholder="form.price.placeholder" placeholder="320000" />
+                <span class="form__error" role="alert" data-i18n="form.required">This field is required</span>
+              </div>
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="goal" data-i18n="form.goal.label">Your goal</label>
+              <div class="form__select-wrap">
+                <select class="form__select" id="goal" name="goal" required>
+                  <option value="" data-i18n="form.goal.placeholder">Select your goal…</option>
+                  <option value="sell" data-i18n="form.goal.opt1">Sell the plot at maximum price</option>
+                  <option value="coinvest" data-i18n="form.goal.opt2">Find a co-investment partner</option>
+                  <option value="explore" data-i18n="form.goal.opt3">Explore what's possible</option>
+                </select>
+                <svg class="form__select-arrow" width="12" height="8" viewBox="0 0 12 8" aria-hidden="true">
+                  <path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="form__error" role="alert" data-i18n="form.required">This field is required</span>
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="description" data-i18n="form.desc.label">Brief description <span class="form__optional" data-i18n="form.optional">(optional)</span></label>
+              <textarea class="form__input form__textarea" id="description" name="description"
+                rows="3"
+                data-i18n-placeholder="form.desc.placeholder" placeholder="Views, existing structures, utilities, access road…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span data-i18n="form.submit">Get my free investor presentation →</span>
+              <span class="btn__spinner" aria-hidden="true"></span>
+            </button>
+
+            <p class="form__disclaimer" data-i18n="form.disclaimer">
+              No spam. No payment details needed. Results in 15 minutes.
+            </p>
+          </form>
+
+          <!-- Success state -->
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite" hidden>
+            <div class="form-success__icon" aria-hidden="true">✅</div>
+            <h3 data-i18n="form.success.title">Submission received!</h3>
+            <p data-i18n="form.success.body">We're already working on your investor presentation. You'll receive it within 15 minutes.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <a href="#" class="footer__logo" aria-label="LandPitch AI">
+        Land<span>Pitch</span> <em>AI</em>
+      </a>
+      <p class="footer__copy" data-i18n="footer.copy">© 2026 LandPitch AI. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer links">
+        <a href="#" data-i18n="footer.privacy">Privacy</a>
+        <a href="#" data-i18n="footer.terms">Terms</a>
+        <a href="#form" data-i18n="footer.contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
